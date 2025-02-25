@@ -1,32 +1,20 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 
 public class TelefonosII {
-
     public static void main(String[] args) {
-        Map<String, ArrayList<String>> agenda = new HashMap<>();
-        ArrayList<String> telefonos = new ArrayList<>();
-        telefonos.add("123456789");
-        telefonos.add("634267486");
-        agenda.put("Carlos", telefonos);
+        ArrayList<String> telefonosPepe = new ArrayList();
+        telefonosPepe.add("11");
+        telefonosPepe.add("22");
 
+        ArrayList<String> telefonosJuan = new ArrayList();
+        telefonosJuan.add("33");
+        telefonosJuan.add("44");
 
-        telefonos = new ArrayList<>();
-        telefonos.add("987654321");
-        telefonos.add("238947289");
-        agenda.put("Jeandeivid", telefonos);
+        Map<String, ArrayList<String>> agenda = new HashMap();
 
-
-
-
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Introduce un nombre: ");
-        String nombre = sc.nextLine();
-        System.out.println("El telefono de " + nombre + " es " + agenda.get(nombre));
-
+        agenda.put("Pepe", telefonosPepe);
+        agenda.put("Juan", telefonosJuan);
     }
-
 }
-
